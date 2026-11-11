@@ -1,0 +1,4 @@
+# The translation model's binary files are stored with Git LFS (run `git lfs install` once per machine before cloning)
+translator/model/**/*.bin filter=lfs diff=lfs merge=lfs -text
+translator/model/**/*.npz filter=lfs diff=lfs merge=lfs -text
+translator/model/**/*.model filter=lfs diff=lfs merge=lfs -text

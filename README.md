@@ -46,7 +46,9 @@ python -m venv .venv
 .venv/Scripts/python -m pip install -r translator/requirements.txt   # Linux/macOS: .venv/bin/python
 ```
 
-To update the model, replace `translator/model/` with Frostfire Translate's `exports/latest/`.
+The model's binary files (`*.bin`, `*.npz`, `*.model`) are stored with Git LFS, so run
+`git lfs install` once before cloning. To update the model, replace `translator/model/` with
+Frostfire Translate's `exports/latest/`.
 
 `translate_text({ source_language: "en", target_languages: "es,fr,cn", source_text: "where is the mine?" })`
 gives `translated_text` as `{"es": "...", "fr": "...", "cn": "..."}`. Chinese is accepted as `cn` or `zh`.
