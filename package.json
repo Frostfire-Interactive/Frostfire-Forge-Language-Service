@@ -1,0 +1,19 @@
+{
+  "name": "frostfire-forge-language-service",
+  "license": "SEE LICENSE IN LICENSING.md",
+  "module": "src/api.ts",
+  "exports": {
+    ".": "./src/api.ts"
+  },
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
